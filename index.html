@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+   <div id="menu">
+    <button id="menu-toggle">&#9776;Menu</button>
+    <ul id="menu-list">
+      <li class="active"><a href="#home" >home</a></li>
+      <li><a href="">about-us</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+      <li><a href="">datesheet</a></li>
+<div id="home">
+  <h3>hrgyjbjk</h3>
+</div>
+<div id="datesheet">
+  23
+</div>
+    </ul>
+   </div>
+   <br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, rem? Quia aliquam laboriosam molestias animi reiciendis harum officiis exercitationem, natus consequatur ab incidunt mollitia nostrum repellat nisi, distinctio dignissimos quas.</p>
+     
+   <style>
+    body{
+      font-family: arial;
+      margin: 0;
+      background-image: "https://tse4.mm.bing.net/th?id=OIP.9SmZ8rqMhIoMSnZ5_zK3LgHaFj&pid=Api&P=0&h=180" height="100px";
+    }
+    #menu{
+      background: #ff088c;
+      width:100%;
+      height: 35px;
+      position: fixed;
+      top: 0;
+      line-height: 35px;
+    }
+    #menu-toggle{
+      margin-left: 10px;
+    }
+    #menu-list{
+      background: rgba(4,53,151,0.95);
+      width: 250px;
+      height: 100vh;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #menu-list li{
+      padding-left: 20px;
+      border-bottom: 1px solid #dedede;
+    }
+    #menu-list a{
+      color: aliceblue;
+      text-decoration: none;
+    }
+     
+    #menu-list.active{
+animation: slide-in 0.3s ease-in-out;
+    }
+    #menu-list:not(.active){
+      animation: slide-out 0.3s ease-in-out forwards;
+    }
+    @keyframes slide-in{
+      0%{
+        transform:translateX(-100%);
+      }
+      100%{
+        transform:translateX(0);
+      }
+    }
+    @keyframes slide-out{
+      0%{
+        transform:translateX(0);
+      }
+      100%{
+        transform:translateX(-100%);     
+    }
+  }
+   </style>
+ <script>
+   
+  const menuToggle=document.querySelector('#menu-toggle');
+  const menuList=document.querySelector('#menu-list');
+  menuToggle.addEventListener('click',function() {
+    menuList.classList.toggle('active');
+  });
+ 
+    </script>
+</body>
+</html>
